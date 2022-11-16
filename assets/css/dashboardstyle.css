@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+
+/* ===================================== ROOT VARAIBLES ===================================== */
+:root{
+    --color-primary : #85E8FD;
+    --color-background : #f6f6f9;
+    --color-white : #fff;
+    --color-dark : #363949;
+    --color-dark-variant : #677483;
+    --color-light : rgba(132, 139,200,  0.18);
+    --box-shadow: 0 2rem 3rem var( --color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 10vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    color: var(--color-dark);
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 14rem auto;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width:100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-primary);
+}
+.success{
+    color: rgb(109, 232, 109);
+}
+
+/* ===================================== SIDEBAR ===================================== */
+
+aside{
+    background-color: var(--color-white);
+    padding-left: 1rem;
+    height: 100vh;
+}
+
+aside .logo{
+    width: 100%;
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .close{
+    display: block;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: #7d8da1;
+    margin-left: 0;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    background: var(--color-light);
+    border-radius: 10px;
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+/* ===================================== Header ===================================== */
+header{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    height: 3.5rem;
+    padding: 2rem;
+}
+
+header button{
+    display: none;
+}
+
+ header .profile{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: right;
+}
+
+.role{
+    text-align: left;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+
+/* ===================================== Main ===================================== */
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-left: 2rem;
+}
+
+main h1{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+main .insights > div{
+    background: var(--color-white);
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+main .insights > div:hover{
+     box-shadow: var(--box-shadow);
+}
+
+main .insights > div span{
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+main .insights > div.Users span{
+    background-color: #d95d5d;
+}
+
+main .insights > div.sales span{
+    background-color: green;
+}
+
+main .insights > div .middele{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3{
+    margin: 0rem 2rem 0.6rem;
+    font-size: 2rem;
+}
+
+main .insights h1{
+    margin: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* ===================================== customers ===================================== */
+
+main .recent-orders{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
+main .recent-orders table{
+    width: 100%;
+    padding: 1.8rem;
+    text-align: center;
+    transition: all 300ms ease;
+}
+main .recent-orders table tr{
+    background-color: var(--color-white);
+    height: 3rem;
+    
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td{
+    border: none ;
+} 
+
+/* ===================================== MEDIA QUERIES ===================================== */
+
+@media screen and (max-width : 1200px) {
+   .container{
+        width: 100%;
+        grid-template-columns: 7rem auto;
+    } 
+
+    aside .logo{
+        display: none;
+    }
+
+     aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        display: flex;
+        justify-content: center;
+        width: 5.6rem;
+    }
+
+    main .insights{
+        grid-template-columns: auto auto;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width : 798px){
+    .container{ 
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+     main .insights{
+       grid-template-columns: 1fr;
+    }
+
+     aside{
+        position: fixed;
+        left: -100px;
+        background:  var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu{
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+
+     aside .sidebar h3{
+        display: block;
+    }
+
+     aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+        font-size: 1rem;
+    }
+}
