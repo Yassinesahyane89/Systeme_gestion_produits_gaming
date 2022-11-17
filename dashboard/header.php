@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome Library -->
-     <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" />
     <!-- ===== Style CSS ===== -->
     <link rel="stylesheet" href="../assets/css/dashboardstyle.css">
@@ -13,27 +13,26 @@
 </head>
 <body>
      <div class="container">
-                <!-- ------------------------ Start Aside ------------------------ -->
+        <!-- ------------------------ Start Aside ------------------------ -->
         <aside>
-            <div class="top">
-                <div class="logo">
-                    <h2>Dash<span class="danger">board </span></h2>
-                    <div class="close" id="close-btn">
-                        <span class="material-symbols-sharp">close</span>
-                    </div>
+
+            <div class="logo">
+                <h2>Dash<span class="danger">board </span></h2>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
                 </div>
             </div>
 
             <div class="sidebar">
-                <a href="index.html">
+                <a href="dashboard.php" class="active">
                     <span class="material-symbols-sharp ">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="customers.html" class="">
+                <a href="customers.php" class="">
                     <span class="material-symbols-sharp">group</span>
                     <h3>Customers</h3>
                 </a>
-                <a href="Products.html" class="active">
+                <a href="products.php">
                     <span class="material-symbols-sharp">grid_view</span>
                     <h3>Products</h3>
                 </a>
@@ -46,50 +45,24 @@
                     <h3>Logout</h3>
                 </a>
             </div>
-
-        </aside>
+        </aside> 
         <!-- ------------------------ End Aside ------------------------ -->
-         <main>
 
+        <!-- ------------------------ start Main ------------------------ -->
+         <main>
+            <!-- --------------------- start Header --------------------- -->
             <header class="top">
                 <button id="menu-btn">
                         <span class="material-symbols-sharp">menu</span>
                 </button>
                 <div class="profile">
-                     <div class="profile-photo">
+                    <div class="profile-photo">
                         <img src="../assets/img/cropped-DSC_0043.jpg">
                     </div>
-                     <div class="info">
+                    <div class="info">
                         <small class="role">Administrator</small>
                         <p>yassine sahyane</p>
                     </div>
                 </div>
             </header>
-
-             <div class="recent-orders">
-                <h1>Products</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID PRODUIT</th>
-                            <th>Name Produit</th>
-                            <th>categorie Produit</th>
-                            <th>Nomber Produit</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>FIFA 22</td>
-                            <td>Sprort</td>
-                            <td>2</td>
-                        </tr>  
-                    </tbody>
-                </table>
-            </div>
-    
-         </main>
-     </div>
-</body>
-</html>
+            <!-- --------------------- End Header --------------------- -->

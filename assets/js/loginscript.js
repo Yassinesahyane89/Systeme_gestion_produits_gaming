@@ -1,22 +1,22 @@
-let show = document.querySelectorAll(".showHidePw");
-let pass = document.querySelectorAll(".password");
+let   pwShowHide = document.querySelectorAll(".showHidePw");
+let   pwFields = document.querySelectorAll(".password");
 
-show.forEach((eyeIcon) => {
-  eyeIcon.addEventListener("click", () => {
-    pass.forEach((pwField) => {
-      if (pwField.type === "password") {
-        pwField.type = "text";
+pwShowHide.forEach(eyeIcon =>{
+    eyeIcon.addEventListener("click", ()=>{
+        pwFields.forEach(pwField =>{
+            if(pwField.type ==="password"){
+                pwField.type = "text";
 
-        show.forEach((icon) => {
-          icon.classList.replace("uil-eye-slash", "uil-eye");
-        });
-      } else {
-        pass.type = "password";
+                pwShowHide.forEach(icon =>{
+                    icon.classList.replace("uil-eye-slash", "uil-eye");
+                })
+            }else{
+                pwField.type = "password";
 
-        show.forEach((icon) => {
-          icon.classList.replace("uil-eye", "uil-eye-slash");
-        });
-      }
-    });
-  });
-});
+                pwShowHide.forEach(icon =>{
+                    icon.classList.replace("uil-eye", "uil-eye-slash");
+                })
+            }
+        })
+    })
+})

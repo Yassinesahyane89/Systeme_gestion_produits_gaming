@@ -16,9 +16,9 @@
 <body>
     <div class="container">
             <div class="form login">
-                <span class="title">Login</span>
+                <span class="title">Log In</span>
 
-                <form action="script.php" method="POST" id="form-task">
+                <form action="login.php" method="POST" id="form-task">
                     <div class="input-field">
                         <input type="email" name="email" placeholder="Enter your email" required>
                         <i class="fa-solid fa-envelope"></i>
