@@ -4,7 +4,7 @@
     include_once 'header.php';
 ?>
 
-             <div class="recent-orders">
+             <div class="tableau-bd">
                 <h1>Customers</h1>
                 <table>
                     <thead>
