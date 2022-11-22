@@ -18,16 +18,34 @@
             <div class="form login">
                 <span class="title">Log In</span>
 
+                <div class="validation-input">
+                    <div>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <div class="message-content">
+                        <h4>Nous n'avons pas pu vous connecter</h4>
+                        <p>Veuillez remplir les champs ci-dessous.</p>
+                    </div>
+                </div>
+
                 <form action="login.php" method="POST" id="form-task">
                     <div class="input-field">
-                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="email" name="email" class="emailLogin" placeholder="Enter your email" oninput="checkEmail()">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
 
+                    <div class="Error errorEmail">
+                        <P>Entrer a valid email address</P>
+                    </div>
+
                     <div class="input-field">
-                        <input type="password" name="password" class="password" placeholder="Enter your password" onInput="check(this)" required>
+                        <input type="password" name="password" class="passwordLogin" placeholder="Enter your password" onInput="check(this)" oninput="checkPassword()">
                         <i class="fa-solid fa-lock"></i>
                         <i class="fa-solid fa-eye showHidePw"></i>
+                    </div>
+
+                    <div class="Error errorpassword">
+                        <P>Entrer a password</P>
                     </div>
 
                     <div class="checkbox-text">
@@ -40,7 +58,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <button type="submit" name="login" id="login">Login</button>
+                        <button type="submit" name="login" id="login" onclick="valide()">Login</button>
                     </div>
                 </form>
 
@@ -51,7 +69,7 @@
                 </div>
             </div>
     </div>
-<script src="../assets/js/loginscript.js"></script>
+<script src="../assets/javascript/loginscript.js"></script>
 </body>
 </html>
 
