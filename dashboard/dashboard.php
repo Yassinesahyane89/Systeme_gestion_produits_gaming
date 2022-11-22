@@ -7,7 +7,7 @@
      header("location: ../authentication/login.php");
      exit();
   }
-?>
+?> 
             <h1>Dashboard</h1>
 
             <div class="insights">

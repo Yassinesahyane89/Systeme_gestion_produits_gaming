@@ -1,27 +1,29 @@
 <?php
     session_start();
-    $title = "Costomers";
+    $title = "Admin";
     include_once 'header.php';
-?>
+    include_once 'includes/adminscript.php';
+    $result = getAdmin();
+?> 
 
              <div class="tableau-bd">
-                <h1>Customers</h1>
+                <h1>Admin</h1>
                 <table>
                     <thead>
                         <tr>
                             <th>Id user</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Password</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>yassine sahyane</td>
-                            <td>yassine.sahyane89@gmail.com</td>
-                            <td>12345678</td>
-                        </tr>
+                       <?php if($result!='0'){ while($row = $result->fetch_assoc()) {?>
+                            <tr>
+                                <td><?php echo $row["UserId"] ?></td>
+                                <td><?php echo $row["UserName"] ?></td>
+                                <td><?php echo $row["UserEmail"] ?></td>
+                            </tr>  
+                        <?php }} ?>
                     </tbody>
                 </table>
             </div>

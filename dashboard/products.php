@@ -2,7 +2,7 @@
     session_start();
     $title = 'Product';
     include_once 'header.php';
-      include_once 'includes/productscript.php';
+    include_once 'includes/productscript.php';
       $result = getproduct();
 ?>
 
@@ -42,7 +42,7 @@
                         <?php }} ?>
                     </tbody>
                 </table>
-            </div>
+            </div> 
             <div class="modal fade" id="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">

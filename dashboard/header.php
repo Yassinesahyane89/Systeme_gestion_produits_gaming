@@ -31,7 +31,7 @@
                     <span class="material-symbols-sharp ">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="Admin.php" class="<?php echo $title =='Costomers' ? 'active' : '';?>">
+                <a href="Admin.php" class="<?php echo $title =='Admin' ? 'active' : '';?>">
                     <span class="material-symbols-sharp">group</span>
                     <h3>Admine</h3>
                 </a>
@@ -64,4 +64,4 @@
                     </div>
                 </div>
             </header>
-            <!-- --------------------- End Header --------------------- -->
+            <!-- --------------------- End Header --------------------- --> 
