@@ -51,7 +51,7 @@
 
                 <form action="includes/loginscript.php" method="POST" id="form-task">
                     <div class="input-field">
-                        <input type="email" name="email" class="emailLogin" placeholder="Enter your email" oninput="checkEmail()">
+                        <input type="email" value="<?php echo $email??''?>" name="email" class="emailLogin" placeholder="Enter your email" oninput="checkEmail()">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
 
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="input-field">
-                        <input type="password" name="password" class="passwordLogin" placeholder="Enter your password" onInput="check(this)" oninput="checkPassword()">
+                        <input type="password" value="<?php echo $password??''?>" name="password" class="passwordLogin" placeholder="Enter your password" oninput="checkPassword()">
                         <i class="fa-solid fa-lock"></i>
                         <i class="fa-solid fa-eye showHidePw"></i>
                     </div>
