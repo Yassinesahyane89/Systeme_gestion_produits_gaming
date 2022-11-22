@@ -31,15 +31,15 @@
                     <span class="material-symbols-sharp ">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="customers.php" class="<?php echo $title =='Costomers' ? 'active' : '';?>">
+                <a href="Admin.php" class="<?php echo $title =='Costomers' ? 'active' : '';?>">
                     <span class="material-symbols-sharp">group</span>
-                    <h3>Customers</h3>
+                    <h3>Admine</h3>
                 </a>
                 <a href="products.php" class="<?php echo $title =='Product' ? 'active' : '';?>">
                     <span class="material-symbols-sharp">grid_view</span>
                     <h3>Products</h3>
                 </a>
-                <a href="#">
+                <a href="includes/logout.php">
                     <span class="material-symbols-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
