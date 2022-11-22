@@ -1,5 +1,7 @@
 <?php
-  include_once 'header.php'
+    session_start();
+    $title = "Costomers";
+    include_once 'header.php';
 ?>
 
              <div class="recent-orders">

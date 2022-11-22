@@ -27,6 +27,7 @@ if(isset($_POST["login"])) loginUser();
                 header("location: ../login.php?error=wronglogin");
                 exit();
             }else if($checkPwd === true){
+                $_SESSION["Username"] = $row["UserName"];
                 $_SESSION["good"] = "goode";
                 header("location: ../../dashboard/dashboard.php ");
                 exit();

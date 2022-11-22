@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" />
     <!-- ===== Style CSS ===== -->
     <link rel="stylesheet" href="../assets/css/dashboardstyle.css">
-    <title>Dashboard</title>
+    <title><?php echo $title;?></title>
 </head>
 <body>
      <div class="container">
@@ -24,21 +24,17 @@
             </div>
 
             <div class="sidebar">
-                <a href="dashboard.php" class="active">
+                <a href="dashboard.php"  class="<?php echo $title =='Dashboard' ? 'active' : '';?>">
                     <span class="material-symbols-sharp ">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="customers.php" class="">
+                <a href="customers.php" class="<?php echo $title =='Costomers' ? 'active' : '';?>">
                     <span class="material-symbols-sharp">group</span>
                     <h3>Customers</h3>
                 </a>
-                <a href="products.php">
+                <a href="products.php" class="<?php echo $title =='Product' ? 'active' : '';?>">
                     <span class="material-symbols-sharp">grid_view</span>
                     <h3>Products</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-sharp">settings</span>
-                    <h3>settings</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">logout</span>
@@ -61,7 +57,7 @@
                     </div>
                     <div class="info">
                         <small class="role">Administrator</small>
-                        <p>yassine sahyane</p>
+                        <p><?php echo $_SESSION["Username"];?></p>
                     </div>
                 </div>
             </header>

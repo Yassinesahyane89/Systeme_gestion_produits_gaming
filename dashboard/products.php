@@ -1,5 +1,8 @@
 <?php
-  include_once 'header.php'
+    session_start();
+    $title = 'Product';
+    include_once 'header.php';
+    // $_SESSION["title"] = "Product";
 ?>
 
              <div class="recent-orders">
